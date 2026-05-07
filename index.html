@@ -9,7 +9,6 @@
   <!-- =============================================
        FONTS
        Current: DM Serif Display (headings) + DM Sans (body)
-       To change: swap the Google Fonts URL and update --font-display / --font-body
   ============================================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -284,7 +283,7 @@
     }
 
     /* =============================================
-       WRITING / BLOG SECTION — expandable posts
+       WRITING / BLOG SECTION
     ============================================= */
     .post-list { display: flex; flex-direction: column; }
 
@@ -364,7 +363,7 @@
     }
 
     /* =============================================
-       PROJECTS SECTION — expandable cards
+       PROJECTS SECTION
     ============================================= */
     .project-grid {
       display: grid;
@@ -627,7 +626,6 @@
 
     <!-- ================================================
          HERO
-         ★ Edit: status text · your name · bio copy · email · button links
     ================================================ -->
     <section id="hero">
       <div class="container">
@@ -649,7 +647,6 @@
         </p>
 
         <div class="hero-cta fade-in">
-          <!-- ★ Change href to your email address -->
           <a href="mailto:arunsourie.official@gmail.com" class="btn btn-primary">Get in touch</a>
           <a href="#projects" class="btn btn-ghost">View my projects →</a>
         </div>
@@ -658,16 +655,14 @@
     </section>
 
     <!-- ================================================
-         PROJECTS — click a card to expand details
-         ★ Add a data-detail attribute with your full project description
-         ★ Duplicate a .project-card div to add more projects
+         PROJECTS
     ================================================ -->
     <section id="projects">
       <div class="container">
         <p class="section-label">Projects</p>
         <div class="project-grid">
 
-          <!-- PROJECT 1 — ★ Edit name, desc, tags, and fill in data-detail -->
+          <!-- PROJECT 1 — Real-Time Audio Visal Zooming -->
           <div class="project-card reveal"
                data-detail="Developed a neural mask-guided TFLC beamforming framework in PyTorch for robust directional speech capture and controllable audio zoom on smartphones. The method combines deep time-frequency masking with covariance-based spatial filtering to enhance speech in noisy environments.">
             <div class="project-header">
@@ -685,7 +680,7 @@
             <div class="project-detail"></div>
           </div>
 
-          <!-- PROJECT 2 -->
+          <!-- PROJECT 2 — FPGA Accelerated CNN -->
           <div class="project-card reveal"
                data-detail="Implemented a hardware-accelerated CNN inference pipeline on a Xilinx Zynq platform, offloading compute-intensive layers to FPGA using Vitis HLS. Coordinated ARM processors for control and preprocessing to achieve lower latency and higher throughput than CPU-only approaches for real-time vision tasks. Additionally, analyzed hardware-software execution paths to optimize latency, building a foundation for understanding timing-based implementation attacks.">
             <div class="project-header">
@@ -703,7 +698,7 @@
             <div class="project-detail"></div>
           </div>
 
-          <!-- PROJECT 3 -->
+          <!-- PROJECT 3 — Autonomous Steam Iron -->
           <div class="project-card reveal"
                data-detail="Designed and developed an autonomous ironing system capable of detecting wrinkled fabric regions using sensors, Arduino and fabric detection algorithms.">
             <div class="project-header">
@@ -721,23 +716,19 @@
             <div class="project-detail"></div>
           </div>
 
-          <!-- ★ Add more projects here — copy the block above -->
-
         </div>
       </div>
     </section>
 
     <!-- ================================================
-         WRITING / BLOG — click a row to expand the post
-         ★ Duplicate a .post-item + .post-body pair to add posts
-         ★ Write your full post content inside .post-body-inner
+         WRITING / BLOG
     ================================================ -->
     <section id="writing">
       <div class="container">
         <p class="section-label">Latest Posts</p>
         <div class="post-list">
 
-          <!-- POST 1 header (clickable row) -->
+          <!-- POST 1 — Linux vs Windows-->
           <div class="post-item reveal" data-target="post-1">
             <div class="post-text">
               <div class="post-title">Observations and Questions After Installing Ubuntu</div>
@@ -749,7 +740,7 @@
           <!-- POST 1 body (expanded content) -->
           <div class="post-body" id="post-1">
             <div class="post-body-inner">
-              <!-- ★ Write your full post content here. Use <p> tags for paragraphs -->
+              <!-- Use <p> tags for paragraphs -->
               <p>
                 I recently installed Ubuntu 24.04, and the experience has been interesting so far.
                 As someone fairly new to Linux, I’ve noticed a few things and wanted to hear how other users deal with them.
@@ -772,17 +763,12 @@
             </div>
           </div>
 
-          <!-- ★ Add more posts here — copy the .post-item div and .post-body div above -->
-
         </div>
       </div>
     </section>
 
     <!-- ================================================
          CONNECT
-         ★ Change your email address
-         ★ Change each social card's href to YOUR profile URL
-         ★ Change the @handle / name text on each card
     ================================================ -->
     <section id="connect">
       <div class="container">
@@ -793,8 +779,7 @@
 
         <div class="social-grid">
 
-          <!-- LinkedIn ──────────────────────────── -->
-          <!-- ★ Change href to: https://linkedin.com/in/YOUR-LINKEDIN-USERNAME -->
+          <!-- LinkedIn -->
           <a href="https://linkedin.com/in/arunsourie" class="social-card reveal" target="_blank" rel="noopener">
             <div class="social-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -808,8 +793,7 @@
             </div>
           </a>
 
-          <!-- GitHub ───────────────────────────── -->
-          <!-- ★ Change href to: https://github.com/YOUR-GITHUB-USERNAME -->
+          <!-- GitHub -->
           <a href="https://github.com/arunsourie" class="social-card reveal" target="_blank" rel="noopener">
             <div class="social-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -830,7 +814,7 @@
   </main>
 
   <!-- ================================================
-       FOOTER  ★ Change "Your Name"
+       FOOTER
   ================================================ -->
   <footer>
     <div class="container">
